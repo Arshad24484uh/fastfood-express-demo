@@ -1,0 +1,41 @@
+<div className="order-box">
+    <div className="orderId-box">
+        <h3>OrderId</h3> <span className="id-show">OD8607927</span>
+        <h3>Amount</h3>  <span className="amount-show">₹899.00</span>
+        <div className="payment-box">
+            <h2>Select Payment Method</h2>
+            <div className="upi box">
+                <h4>UPI</h4>
+                <div>
+                    <div className="gpay"><img src=""/> <span>Gpay</span></div>
+                    <div className="phonepe"><img src=""/> <span>Phonepe</span></div>
+                    <div className="paytm"><img src=""/> <span>Paytm</span></div>
+                    <div className="bhim"><img src=""/> <span>BHIM</span></div>
+                    <div className="jiomoney"><img src=""/> <span>Jio Money</span></div>
+                    <div className="airtel"><img src=""/> <span>Airtel Money</span></div>
+                </div>
+
+
+            </div>
+
+            <div className="netbanking">
+                <h4>Net Banking</h4>
+                <div>
+                <div className="sbi"><img src=""/> <span>Sbi</span></div>
+                    <div className="kotak"><img src=""/> <span>kotak</span></div>
+                    <div className="hdfc"><img src=""/> <span>HDFC</span></div>
+                    <div className="axis"><img src=""/> <span>axis</span></div>
+                    <div className="icici"><img src=""/> <span>ICICI</span></div>
+                    <div className="baroda"><img src=""/> <span>Baroda</span></div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+
+
+   https://cdn-icons-png.flaticon.com/512/2655/2655001.png

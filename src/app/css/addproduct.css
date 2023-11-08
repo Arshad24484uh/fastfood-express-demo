@@ -1,0 +1,55 @@
+.product-page{
+    width: 50%;
+    height: auto;
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 30px;
+}
+
+label{
+    font-size: 19px;
+    color: rgb(11, 11, 34);
+    margin: 10px;
+}
+body{
+    background-color: aliceblue;
+}
+input{
+    width: 330px;
+    height:40px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+    border-radius: 6px;
+    margin: 10px;
+    border: 1px solid green;
+}
+.t-input{
+    width: 20px;
+    height: 20px;
+}
+.confirm{
+    width: 60px;
+    height: 40px;
+    background-color: coral;
+    border: none;
+    color: white;
+
+
+}
+.submit{
+    width: 120px;
+    height: 55px;
+    border: none;
+    color: white;
+    background-color: green;
+}
+.cc{
+    width: 100px;
+    height: 40px;
+}
+.pp{
+    width: 100px;
+    height: 40px; 
+}

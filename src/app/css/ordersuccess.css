@@ -1,0 +1,48 @@
+.order-box{
+    width: 20%;
+    height: 300px;
+    background-color:white;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    
+}
+body{
+    justify-content: center;
+    align-items: center;
+}
+Image{
+    margin-left: 25px;
+}
+h2{
+    font-size: 22px;
+    color:rgb(14, 2, 22);
+    font-family: 'Cabin', sans-serif;
+    font-family: 'DM Sans', sans-serif ;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+span{
+    font-size: 17px;
+    color:rgb(14, 2, 22);
+    font-family: 'Cabin', sans-serif;
+    font-family: 'DM Sans', sans-serif ;
+    margin-top: 8px;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.try{
+    font-size: 13px;
+    color:grey;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'DM Sans', sans-serif ;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-transform: capitalize;
+    display: block;
+}
+@media only screen and (max-width: 500px){
+    .order-box{
+        width: 100%;
+    }
+}

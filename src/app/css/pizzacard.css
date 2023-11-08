@@ -1,0 +1,124 @@
+.card{
+    width: 20%;
+    height: 250px;
+    background-color: rgb(248, 244, 255);
+    box-sizing: border-box;
+    margin: 50px;
+    display: inline-block;
+    border: 0.5px solid lightgrey;
+    
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+.image-div{
+    width: 100%;
+    height: 60%;
+    
+
+}
+.card-image{
+    width: 100%;
+    height: 100%;
+    
+}
+.item-title{
+    width: 100%;
+    height: 20%;
+    margin-top: 10px;
+    
+    
+
+}
+.title{
+    font-size: 18px;
+    
+    color: rgb(31, 32, 34);
+    margin-left: 7px;
+    font-weight: 600px;
+    font-family: 'Gabarito', sans-serif;
+    
+}
+.rating-price-div{
+    width: 100%;
+    height: 20%;
+    
+    
+    
+}
+
+#fav{
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 5px;
+    font-size: 25px;
+    color: white;
+    font-weight: 300;
+    
+}
+.off-title{
+    font-size: 16px;
+    margin-left: 7px;
+    color: green;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+#star{
+    font-size: 22px;
+    color: green;
+    margin-left: 7px;
+    margin-top: 4px;
+    position: relative;
+    top: 5px;
+}
+.rates{
+    font-size: 13px;
+    color: green;
+    font-family: 'Gabarito', sans-serif;
+
+}
+.price-title{
+    font-size: 21px;
+    color: #1d102b;
+    font-weight: 500;
+    font-family: 'Gabarito', sans-serif;
+     margin-left: 60%;
+    
+}
+.pizza-wrapper{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+@media only screen and (max-width: 500px){
+    .card{
+        width: 45%;
+        height: 200px;
+        margin: 2%;
+    }
+    .title{
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 6px;
+        text-align: start;
+    }
+    #fav{
+        margin-left: 36%;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .price-title{
+        font-size: 17px;
+        font-weight: 400;
+        margin-left: 45%;
+    }
+    .off-title{
+        text-align: start;
+        font-size: 13px;
+        font-weight: 500;
+    }
+}

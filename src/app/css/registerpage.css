@@ -1,0 +1,197 @@
+.signup-box{
+    width: 25%;
+    height: 550px;
+    
+    background: white;
+    border: 1px solid lightgrey;
+    
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+input{
+    width: 70%;
+    height: 35px;
+    background-color: white;
+    outline: none;
+    padding: 2px 2px 2px 35px;
+    margin: 25px 4px 4px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    border: 1px solid  rgb(25, 18, 31);
+}
+::placeholder{
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif ;
+    color: rgb(41, 32, 32);
+    font-weight: 400;
+    opacity: 0.7;
+    
+}
+body{
+    background-color: rgba(219, 219, 220, 0.463);
+    
+    filter: blur(100%);
+}
+.sign-up-heading{
+    font-size: 25px;
+    color: white;
+    font-family: 'DM Sans', sans-serif ;
+    background-color: rgb(42, 41, 50);
+    padding: 3px 2px 2px 10px;
+}
+.register-button{
+    width: 300px;
+    height: 35px;
+    background-color:rgb(245, 183, 37);
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    align-items: center;
+    margin: 10px 10px 10px 12%;
+    cursor: pointer;
+
+}
+.signup-bottom{
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid lightgrey;
+    background-color:white;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+.already-account{
+    font-size: 18px;
+    font-weight: 550;
+    color: rgb(21, 44, 34);
+    list-style: none;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif ;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    
+}
+.login-button{
+    width: 100px;
+    height: 35px;
+    background-color:rgb(27, 18, 39);
+
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    align-items: center;
+    margin: 10px 10px 10px 40%;
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#name-icon{
+    color: black;
+    font-size: 25px;
+    position: relative;
+    left: 53px;
+    top: 5px;
+}
+
+#email-icon{
+    color: black;
+    font-size: 25px;
+    position: relative;
+    left: 53px;
+    top: 5px;
+}
+#phone-icon{
+    color: black;
+    font-size: 25px;
+    position: relative;
+    left: 53px;
+    top: 5px;
+}
+
+#password-icon{
+    color: black;
+    font-size: 25px;
+    position: relative;
+    left: 53px;
+    top: 5px;
+}
+
+@media only screen and (max-width: 500px){
+    .signup-box{
+        width: 100%;
+        height: auto;
+        margin: 10px 0px 0px 0px;
+        background: none;
+        border: none;
+        
+        
+    }
+    input{
+        width: 85%;
+        height: 36px;
+        background-color: white;
+        outline: none;
+        padding-left: 44px;
+        margin: 20px 4px 4px 5px;
+        border-radius: 4px;
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+        border: 0.5px solid  rgb(73, 73, 72);
+        box-sizing: border-box;
+
+        
+    }
+    .sign-up-heading{
+        font-size: 25px;
+        font-weight: 600;
+        color: rgb(32, 58, 45);
+        font-family: 'DM Sans', sans-serif ;
+        background: none;
+        padding: 3px 2px 2px 10px;
+    }
+    body{
+        background: white;
+    }
+
+    .register-button{
+        width: 80%;
+        border-radius: 6px;
+        height: 35px;
+        background-color:rgb(245, 183, 37);
+        color: white;
+        border: none;
+        font-size: 17px;
+        font-weight: 600;
+        margin-left: 10%;
+        cursor: pointer;
+        
+        
+    }
+
+    .signup-bottom{
+        width: 100%;
+        height: 50px;
+        border-top: 1px solid lightgrey;
+        background-color:white;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .login-button{
+        display: none;
+    }
+    .already-account{
+        font-size: 13px;
+        text-decoration: underline;
+    }
+}

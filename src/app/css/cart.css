@@ -1,0 +1,287 @@
+.cart-wrapper{
+    width: 50%;
+    height: 100vh;
+    background-color:  rgb(253, 249, 255);
+    display: inline-block;
+    
+}
+.cart-nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(31, 32, 50);
+    display: flex;
+    padding-left: 10px;
+}
+body{
+    display: flex;
+}
+.cart-box{
+    width: 90%;
+    height: 65px;
+    border: 1px solid rgba(182, 182, 182, 0.459);
+    margin: 5%;
+    display: flex;
+    background-color: rgb(245, 255, 249);
+    background-color: white;
+}
+.image-box{
+    width: 15%;
+    height: 100%;
+
+}
+.counter{
+    color:white;
+    font-size: 20px;
+    margin-left: 60%;
+    
+    margin-top: 5px;
+}
+body{
+    background-color: whitesmoke;
+}
+h1{
+    color: rgb(32, 35, 53);
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+#cart-icon{
+    font-size: 40px;
+    color: crimson;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.title-box{
+    width: 30%;
+    height: 100%;
+
+}
+.cart-title{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(33, 29, 33);
+    font-family: 'DM Sans', sans-serif ;
+    text-transform: capitalize;
+    margin-top:8px;
+    margin-left: 3%;
+}
+.qty-box{
+        width: 12%;
+        height: 100%;
+    
+        text-align: center;
+    
+}
+
+.delete-icon{
+    color:rgb(88, 88, 88);
+    margin-top: 15px;
+}
+
+.delete-icon:hover{
+    color:green;
+}
+.price-box{
+    width: 15%;
+        height: 100%;
+        
+        text-align: center;
+    
+}
+.amount-box{
+    width: 16%;
+        height: 100%;
+        text-align: center;
+    
+}
+span{
+    display: block;
+    color: rgb(53, 103, 57);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif ;
+    font-family: 'Gabarito', sans-serif;
+    margin-top: 8px;
+}
+.span-b{
+    font-size: 17px;
+    color: rgb(14, 14, 20);
+    font-weight: 400;
+    text-align: center;
+    
+    font-family: 'Gabarito', sans-serif;
+    
+}
+
+
+/* here we style adddress page*/
+.address-box{
+    width: 48%;
+    height: 100vh;
+    display: none;
+  background-color:  rgb(253, 249, 255);
+    animation-name: mymove;
+    animation-duration: 1s;
+    position: relative;
+    
+}
+.address-nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: rgb(31, 32, 50);
+}
+.lebal-tag{
+    font-size: 21px;
+    color: rgb(11, 11, 25);
+    margin-left: 25px; font-family: 'Cabin', sans-serif;
+   
+    text-transform: capitalize;
+    
+}
+.nav-heading{
+    color: white;
+    margin-left: 10px;
+}
+.input-tag{
+    width: 309px;
+    height: 40px;
+    outline: none;
+    border: 1px solid crimson;
+    border-radius: 4px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 13px;
+    margin-left: 20px;
+    display: block;
+    margin-top: 3px;
+    background-color: white;
+    
+
+}
+::placeholder{
+    font-size: 14px;
+    color: rgb(32, 32, 32);
+    font-family: 400;
+    opacity: 0.6;
+}
+.sub-btn{
+    width: 200px;
+    height: 45px;
+    color: white;
+    background-color: crimson;
+    font-family: 'Cabin', sans-serif;
+    border: none;
+    border-radius: 5px;
+    margin-left:25px;
+    cursor: pointer;
+
+}
+
+/*here are we  styleling checkout styling*/
+.checkout-box{
+    width: 350px;
+    height: 100px;
+    display: none;
+    background-color: rgb(240, 237, 255);
+    display: flex;
+    position: fixed;
+    bottom: 53px;
+    margin-left: 10%;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px lightgrey;
+}
+.checkout-title-box{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    
+}
+
+
+.checkout-btn-box{
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+    border: none;
+    padding: 2%
+}
+
+.checkout-btn{
+    width: 90%;
+    height: 50%;
+    margin: 5%;
+    background-color: rgb(35, 25, 44);
+    color: white;
+    border: none;
+    font-family: 'Cabin', sans-serif;
+    cursor: pointer;
+
+}
+.h3{
+    font-size: 22px;
+    color: rgb(24, 28, 45);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+}
+
+.ad-h3{
+    font-size: 25px;
+    color: rgba(48, 49, 50, 0.885);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.h4{
+    font-size: 19px;
+    color: rgb(24, 28, 45);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+}
+@media only screen and (max-width: 500px){
+    body{
+        display: block;
+    }
+    .cart-wrapper{
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    .cart-box{
+        width: 95%;
+        margin: 2%;
+        margin-top: 10px;
+    
+    }
+    .counter{
+        font-size: 18px;
+        margin-left: 50%;
+        margin-top: 2%;
+    }
+    span{
+        font-size: 13px;
+    }
+    .amount-box{
+        width: 20%;
+    }
+    .address-box{
+        width: 100%;
+        height: 100vh;
+    }
+    .checkout-box{
+        width: 100%;
+        margin: 0px;
+        bottom: 5px;
+        
+
+    }
+    .cart-nav{
+        background-color: rgb(0, 0, 0);
+    }
+}

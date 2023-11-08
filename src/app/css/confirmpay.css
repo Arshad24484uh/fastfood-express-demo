@@ -1,0 +1,234 @@
+.orderid-box{
+    width: 95%;
+    height: 55px;
+    background-color:rgb(52, 52, 63);
+    background-color: rgb(64, 80, 112);
+    padding-bottom: 5px;
+    margin-top: 14px;
+    margin-left: 11px;
+    border-radius: 5px;
+    padding-top: 4px;
+
+
+}
+.box-wrapper{
+    margin: auto;
+    width: 25%;
+    height: 700px;
+    
+}
+
+.payment-box{
+    width: 100%;
+    height: 500px;
+    
+}
+h2{
+    color: rgb(19, 11, 23);
+    font-size: 21px;
+    margin-left: 10px;
+
+}
+.images{
+    width: 25%;
+    height: 100%;
+}
+
+.gpay{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    
+    box-shadow: 1.5px 1.5px 1.5px lightgrey;
+    margin: 11px 14px 0px 14px;
+    cursor: pointer;
+
+}
+
+.phonepe{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 1.5px lightgrey;
+    margin: 11px 14px 0px 14px;
+
+}
+
+.paytm{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 1.5px lightgrey;
+    margin: 11px 14px 0px 14px;
+
+}
+
+.upi{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 1.5px lightgrey;
+    margin: 11px 14px 0px 14px;
+
+}
+
+.netbanking{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 1.5px lightgrey;
+    margin: 11px 14px 0px 14px;
+
+}
+
+.debitcard{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 1.5px lightgrey;
+    margin: 11px 14px 0px 14px;
+
+}
+
+.pay-btn{
+    width: 50%;
+    height: 40px;
+    background-color:crimson;
+    color: white;
+    font-family: 'DM Sans', sans-serif ;
+    border: none;
+    margin-top: 13px;
+    margin-left: 25%;
+    border-radius: 5px;
+}
+
+.cod{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 1.5px lightgrey;
+    margin: 11px 14px 0px 14px;
+
+}
+span{
+    font-size: 19px;
+    color: rgb(23, 15, 24);
+    font-family: 'Cabin', sans-serif;
+    font-family: 'DM Sans', sans-serif ;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+h3{
+    font-size: 15px;
+    color:white;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'DM Sans', sans-serif ;
+    margin-top: 8px;
+    margin-left: 10px;
+    
+}
+
+.h3{
+    font-size: 18px;
+    color:rgb(14, 2, 22);
+    font-family: 'Cabin', sans-serif;
+    font-family: 'DM Sans', sans-serif ;
+    margin-top: 8px;
+    margin-left: 10px;
+    
+}
+
+h2{
+    font-size: 17px;
+    color:rgb(14, 2, 22);
+    font-family: 'Cabin', sans-serif;
+    font-family: 'DM Sans', sans-serif ;
+    margin-top: 8px;
+    margin-left: 10px;
+    
+}
+.radio-btn{
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+    margin-left: 12px;
+    accent-color: crimson;
+}
+
+@media only screen and (max-width: 500px){
+    .box-wrapper{
+        width: 100%;
+        height: 700px;
+    }
+    .gpay{
+        width: 80%;
+        height: 50px;
+        margin-left: 10%;
+    }
+    .cod{
+        width: 80%;
+        height: 50px;
+        margin-left: 10%;
+    }
+
+    .phonepe{
+        width: 80%;
+        height: 50px;
+        margin-left: 10%;
+    }
+
+    .paytm{
+        width: 80%;
+        height: 50px;
+        margin-left: 10%;
+    }
+
+    .upi{
+        width: 80%;
+        height: 50px;
+        margin-left: 10%;
+    }
+
+    .netbanking{
+        width: 80%;
+        height: 50px;
+        margin-left: 10%;
+    }
+
+    .debitcard{
+        width: 80%;
+        height: 50px;
+        margin-left: 10%;
+    }
+    h2{
+        text-align: center;
+    }
+}

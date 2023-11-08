@@ -1,0 +1,454 @@
+.product-box {
+    width: 30%;
+    height: 1000px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 0px;
+    margin-left: 8px;
+    display: inline-block;
+    animation-name: mymove;
+    animation-duration: 0.2s;
+
+}
+
+.image-box {
+    width: 100%;
+    height: 300px;
+
+
+
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+}
+
+.title-box {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.product-title {
+    color: rgba(10, 6, 6, 0.949);
+    font-size: 24px;
+    font-family: 'Gabarito', sans-serif;
+    margin: 4px;
+    text-transform: capitalize;
+    
+
+}
+
+
+.product-desc {
+    color: rgba(10, 6, 6, 0.625);
+    font-size: 17px;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 4px 4px 4px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.rating-box {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 4px 0px;
+    background-color: white;
+    padding-top: 3px;
+}
+
+.product-rating {
+    width: auto;
+    height: 30px;
+    background-color: rgb(238, 248, 238);
+    padding: 3px;
+    border-radius: 7px;
+    margin: 0px 0px 0px 15px;
+}
+
+.product-offer {
+    width: auto;
+    height: 30px;
+    background-color: rgb(214, 231, 214);
+    background-color: rgb(238, 248, 238);
+    margin: 0px 15px 0px 0px;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+#star-icon {
+    color: green;
+    font-size: 23px;
+    position: relative;
+    top: 4px;
+}
+
+.rating- {
+    font-size: 16px;
+    font-weight: 600;
+    color: green;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.discount {
+    font-size: 18px;
+    font-weight: 600;
+    color: green;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.size-box {
+    width: 100%;
+    height: auto;
+    margin: 4px 2px 2px 2px;
+    display: flex;
+}
+
+.sizes {
+    width: 110px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    margin-left: 10px;
+    box-shadow: 1px 1px 1px lightgray;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.pss {
+    display: block;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    border-bottom: 0.5px dashed lightgrey;
+    color: rgb(22, 35, 22);
+    
+    text-transform: uppercase;
+}
+
+.pps {
+    font-size: 17px;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Gabarito', sans-serif;
+    color: coral;
+    font-weight: 500;
+
+}
+
+.select-title {
+    font-size: 22px;
+    margin-left: 10px;
+    font-family: 'Gabarito', sans-serif;
+    color: rgba(13, 24, 24, 0.804);
+    margin-top: 7px;
+}
+
+.add-fav-box {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px dashed lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1 {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.box2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+#fav-icon {
+    font-size: 25px;
+    border-radius: 50%;
+    color: rgb(43, 41, 41);
+    margin-top: 3px;
+    font-weight: 200;
+    cursor: pointer;
+
+}
+
+.cart-bottom {
+    width: 98;
+    height: 55px;
+    background-color: rgb(49, 211, 76);
+    border-radius: 11px;
+    margin: 1.5%;
+    margin: 1%;
+    margin-top: 15px;
+    display: none;
+}
+
+.plus-minus-box {
+    width: 20%;
+    height: 100%;
+
+    justify-content: space-around;
+    display: flex;
+
+}
+
+.addd-button {
+    width: 26px;
+    height: 26px;
+    background-color:white;
+    color: red;
+    color: pink;
+    display: block;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.remove-button {
+    width: 26px;
+    height: 26px;
+    background-color:white;
+    color:rgb(49, 211, 76);
+    display: block;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.confirm-box{
+    width: 30%;
+    height: 50px;
+    
+    background-color: rgb(229, 255, 246);
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    animation-name: cart-bottom;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    
+    
+
+}
+.con-img{
+    width: 100%;
+    height: 100%;
+}
+.item-title{
+    font-size: 14px;
+    color: rgba(41, 40, 42, 0.814);
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Gabarito', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.size-span{
+    font-size: 14px;
+    color: rgba(41, 40, 42, 0.814);
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+    display: block;
+    text-transform: uppercase;
+}
+.confirm-button{
+    width: 100px;
+    height: 45px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    font-size: 14px;
+    margin-left: 20%;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+.c-img-box{
+    width: 20%;
+    height: 100%;
+
+}
+.c-title-box{
+    width: 30%;
+    height: 100%;
+    
+    padding-left: 3px;
+}
+.c-size-box{
+    width: 18%;
+    height: 100%;
+    
+}
+.c-btn-box{
+    width: 40%;
+    height: 100%;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button:hover {
+    color: coral;
+    background-color: white;
+}
+
+.remove-button:hover {
+    color: coral;
+    background-color: white;
+}
+
+.qty-box {
+    width: 15%;
+    height: 100%;
+
+}
+
+h5 {
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 600;
+    color: white;
+    margin-top: 5px;
+}
+
+.qty {
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    display: block;
+}
+.amount-box{
+    width: 20%;
+    height: 100%;
+
+}
+.price-title{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    font-family: 'Gabarito', sans-serif;
+    display: block;
+}
+.add-to-cart-box{
+    width: 25%;
+    height: 100%;
+    margin-left: 15%;
+
+}
+.cart-button{
+    width: auto;
+    height: 80%;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    color: rgb(49, 211, 76);
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-family: 'Gabarito', sans-serif;
+    cursor: pointer;
+}
+.sizes:hover{
+    border: 1px solid green;
+}
+@keyframes mymove{
+   from{width: 0%;}
+   to{width: 30%;}
+}
+
+
+.sidebar{
+    width: 65%;
+    height: 1000px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+body{
+    display: flex;
+}
+#cart-icon{
+    font-size: 45px;
+    color: rgb(12, 3, 22);
+    margin:10px;
+    font-weight: 300;
+    
+    cursor: pointer;
+}
+.cart-value{
+    width: 18px;
+    height: 18px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    bottom: 50px;
+    right: 23px;
+    
+}
+@keyframes cart-bottom{
+    from{width: 0%;}
+    to{width: 30%;}
+}
+@media only screen and (max-width: 500px){
+    .confirm-box{
+        width: 100%;
+        bottom: 53px;
+        padding-bottom: 4px;
+    }
+
+    .size-span{
+        font-size: 12px;
+    }
+    .item-title{
+        font-size: 12px;
+    }
+    .product-box{
+        width: 100%;
+       height: 800px;
+       margin-left: 0%;
+       animation: none;
+       
+    }
+    .cart-bottom{
+        width: 96%;
+        margin: 1%;
+        bottom: 60px;
+        
+    }
+    .sidebar{
+        display: none;
+    }
+
+    @keyframes cart-bottom{
+        from{width: 0%;}
+        to{width: 100%;}
+    }
+    body{
+        padding: 1px;
+        cursor: auto;
+    }
+}

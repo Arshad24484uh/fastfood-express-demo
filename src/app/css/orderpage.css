@@ -1,0 +1,108 @@
+.order-wrapper{
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+body{
+    background-color: aliceblue;
+}
+.order-box{
+    width: 25%;
+    height: 350px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    background-color: rgb(240, 255, 250);
+    display: inline-block;
+    border-radius: 6px;
+}
+.image-box{
+    width: 100%;
+    height: 70%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.title-box{
+    width: 100%;
+    height: 40px;
+    
+}
+.orderid-box{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px dashed lightgray;
+    
+}
+.status-box{
+    width: 100%;
+    height: 40px;
+    
+    display: flex;
+}
+.order-id-title{
+    color: rgb(2, 99, 72);
+    font-size: 15px;
+    font-family: 'Cabin', sans-serif;
+    float: right;
+    margin-right: 6px;
+
+
+}
+.con-box{
+    width: 50%;
+    height: 100%;
+    
+}
+.status{
+    width: 50%;
+    height: 100%;
+    
+    text-align: center;
+    
+    
+}
+
+.tt{
+    color: rgba(85, 84, 82, 0.738);
+    font-size: 11px;
+    display: block;
+}
+.pp{
+    color: green;
+    font-size: 12px;
+}
+.title-tag{
+    font-size: 16px;
+    color: rgb(35, 39, 38);
+    text-align: center;
+    margin-top: 4px;
+}
+.ppt{
+    margin-left: 6px;
+    font-size: 13px;
+    position: relative;
+    bottom: 8px;
+    color: rgb(198, 110, 78);
+}
+h2{
+    font-size: 28px;
+    color: rgb(5, 14, 14);
+    font-family: 'Cabin', sans-serif;
+    margin-left: 10px;
+
+}
+@media only screen and (max-width: 500px){
+    .order-box{
+        width: 94%;
+        margin: 3%;
+    }
+    h2{
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    box-shadow: 1px 1px 1px lightgray;
+    
+    
+}
+
+
+
+.nav-ul{
+    display: flex;
+    margin-left: 700px;
+
+}
+.nav-li{
+    list-style: none;
+    margin: 6px 6px 4px 60px;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(10, 22, 33);
+}
+.nav-link{
+    color: rgb(10, 22, 33);
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight:500;
+    text-transform: capitalize;
+    transition: all,0.5s;
+
+
+}
+.nav-link:hover{
+    color: rgb(53, 236, 90);
+}
+.cart-box{
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 20px;
+    
+}
+.cart-counter{
+    position: relative;
+    bottom: 48px;
+    left: 26px;
+}
+
+.searchbar{
+    max-width: 100%;
+    height: 65px;
+    box-shadow: 1px 1px 1px lightgray;
+    display: flex;
+    background-color: rgb(34, 27, 50);
+    padding: 10px;
+    
+
+}
+
+
+.deliveryshow{
+    width: 25%;
+    height: 70%;
+    /*border: 1px solid lightgray;*/
+    border-radius: 10px;
+    padding: 10px;
+    
+    
+}
+.searching{
+    width: 60%;
+    height: 40px;
+    margin-left: 10%;
+    display: flex;
+    
+}
+.search-input{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 14px;
+    font-family: 'DM Sans', sans-serif ;
+    padding: 0px 5px 5px 40px;
+    color: rgb(14, 12, 27);
+}
+.search-btn{
+    width: 85px;
+    height: 40px;
+    background-color: crimson;
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    border: none;
+    position: relative;
+    right: 4.5em;
+    top: 3px;
+    border-radius: 16px;
+}
+.search-icon-input{
+    font-size: 28px;
+    position: relative;
+    left: 33px;
+    top: 8px;
+}
+
+.searching-mob{
+    width: 95%;
+    height: 40px;
+    margin: 12px 2px 0px 4px;
+    display: none;
+}
+.search-input-mob{
+    width: 85%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgb(237, 245, 245);
+    border:1px solid crimson;
+    margin-left: 2%;
+    padding: 0px 0px 0px 35px;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif ;
+    color: rgb(14, 12, 27);
+    
+}
+
+.search-icon-input-mob{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 8px;
+
+
+}
+.search-btn-mob{
+    width: 60px;
+    height: 35px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 3px;
+}
+
+
+#delivery-show-heading{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: white;
+    font-family: 'DM Sans', sans-serif ;
+    font-weight: 400;
+}
+.div-box2{
+    width: 100%;
+    display: flex;
+    margin: 7px 0px 2px 3px;
+}
+.change-location-paragaraph{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(53, 236, 90);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.locationdrop{
+    position: relative;
+    bottom: 3px;
+    color: white;
+}
+::placeholder{
+    font-size: 16px;
+    color:rgb(100, 102, 104);
+    font-family: 'DM Sans', sans-serif ;
+
+}
+.logo{
+    width: 100px;
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+    cursor: pointer;
+    
+}
+@media only screen and (max-width: 500px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .nav-ul{
+        display:none;
+        margin-left: 700px;
+    
+    }
+    .cart-box{
+        
+        margin: 0% 5% 0% 55%;
+        
+    }
+
+    
+    .searchbar{
+        
+        display: flex;
+        padding: 10px;
+        max-width: 100%;
+        height: 50px;
+    
+    }
+    .deliveryshow{
+        width: 100%;
+        height: 100%;
+        padding: 2px 2px 0px 10px;
+        display: block;
+       
+        
+    }
+    .searching{
+       display: none;
+       
+    }
+    .searching-mob{
+        display: flex;
+    }
+    
+    
+
+
+  }

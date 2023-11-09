@@ -1,6 +1,6 @@
 'use client';
 import { useState } from "react";
-const deliveryadd = () => {
+const Deliveryadd = () => {
     const [pincode,setpincode] = useState();
     const [area,setarea] = useState();
     const [city,setcity] = useState();
@@ -36,4 +36,4 @@ const deliveryadd = () => {
         </>
     )
 }
-export default deliveryadd;
+export default Deliveryadd;

@@ -1,28 +1,16 @@
 'use client';
 const { createSlice, current } = require("@reduxjs/toolkit");
 
-//const initialState=[].concat(JSON.parse(localStorage.getItem("product")))
-//let initialState={
-    //products:JSON.parse(localStorage.getItem("product"))
-//}
-
-//.concat(JSON.parse(localStorage.getItem("product")))
-//if(initialState.length>1){
-   // initialState = JSON.parse(localStorage.getItem("product"))
-//}
-
-//if(initialState.length==1){
-//   initialState.splice(1,0)
-//}
 const cartslice = createSlice({
     name: "cart",
-    initialState:[].concat(JSON.parse(localStorage.getItem("product"))),
+    initialState:[],
+    
     reducers: {
         add(state, action) {
 
             state.push(action.payload);
-            let a = JSON.stringify(current(state))
-            localStorage.setItem("product", a);
+           // let a = JSON.stringify(current(state))
+           // localStorage.setItem("product", a);
 
 
         },

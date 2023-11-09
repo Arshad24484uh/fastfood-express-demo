@@ -21,9 +21,9 @@ const Searchbar = () => {
     area:"",
     pincode:""
   });
-  const [scrolled,setscrolled] = useState(false);
+  const [deli,setdeli] = useState();
 
-  const nav = window.location.href;
+  
   const productsearch = async () => {
     let res = await fetch("https://fakestoreapi.com/products");
     let sdata = await res.json();
@@ -31,28 +31,38 @@ const Searchbar = () => {
     console.log(data);
   }
   console.log(data);
-//http://localhost:3000
- /* useEffect(() => {
-    if (nav.length>22) {
-      setcolor("green");
-      setborderRadius("0px")
-      setmargin("0px")
 
+  useEffect(() => {
+    //let local = JSON.parse(localStorage.getItem("deliverd"));
+    //setdeli(local)
 
-    }
-  }, [])*/
+    if(typeof window !=="undefined"){
+      let local = JSON.parse(localStorage.getItem("deliverd"));
+      setdeli(local)
 
+      if(deli){
+        setdisplay("none")
+       }else{
+        setdisplay("block")
+       }
+   
+     }
+  
+  },[2])
+   /*if(typeof window !=="undefined"){
+    let local = JSON.parse(localStorage.getItem("deliverd"));
+    setdeli(local)
+   }*/
 
-  let local = JSON.parse(localStorage.getItem("deliverd"));
-  console.log(local)
+  
 
-  setTimeout(() => {
-     if(local){
+  /*setTimeout(() => {
+     if(deli){
       setdisplay("none")
      }else{
       setdisplay("block")
      }
-  },500);
+  },500);*/
  
 
 
@@ -72,7 +82,7 @@ const Searchbar = () => {
     <>
       <div className="searchbar" style={{ backgroundColor: color, borderRadius: borderRadius, marginTop: margin }}>
         <div className="deliveryshow">
-          <h2 id='delivery-show-heading'> delivered to {local?.area} {local?.pincode} </h2>
+          <h2 id='delivery-show-heading'> delivered to {deli?.area} {deli?.pincode} </h2>
           <div className='div-box2'>
             <LocationOnOutlinedIcon className='locationdrop' />
             <p onClick={() => { setdisplay("block"); localStorage.removeItem("deliverd") }} className='change-location-paragaraph'>change location</p>

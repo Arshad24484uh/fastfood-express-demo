@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import navbarimage from '../../public/logo.png';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../app/component.css';
 import Link from 'next/link';
 import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
@@ -9,9 +9,14 @@ import { useSelector } from 'react-redux';
 
 
 const Navbar = () => {
+    const [userId,setuserId] = useState();
     const item = useSelector((state)=>state.cart);
     let counter = item.length-1;
-    let userid = JSON.parse(localStorage.getItem("user"));
+    useEffect(()=>{
+        let userid = JSON.parse(localStorage?.getItem("user"));
+        setuserId(userid)
+
+    },[])
 
     
 
@@ -23,7 +28,7 @@ const Navbar = () => {
                 <ul className='nav-ul'>
                     <li className='nav-li'><Link className='nav-link' href={'/menu'}>Menu</Link></li>
                     <li className='nav-li'><Link className='nav-link' href={'/deals'}>Hot deals</Link></li>
-                    <li className='nav-li'><Link className='nav-link' href={`/order/${userid?._id}`} >orders</Link></li>
+                    <li className='nav-li'><Link className='nav-link' href={`/order/${userId?._id}`} >orders</Link></li>
                     <li className='nav-li'><Link className='nav-link' href={'/favourite'}>Favourite</Link></li>
 
                 </ul>

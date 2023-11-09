@@ -66,7 +66,7 @@ key
                 <button onClick={registerbtn} className='register-button'>Signup</button>
 
                 <div className='signup-bottom'>
-                    <a  href='/login' className='already-account'>Already haven't Account Login here?</a>
+                    <a  href='/login' className='already-account'>Already havent Account Login here?</a>
                     <button  onClick={gobtn} className='login-button'>Login</button>
                 </div>
             </div>

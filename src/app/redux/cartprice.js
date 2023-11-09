@@ -1,9 +1,9 @@
 const { createSlice,current} = require("@reduxjs/toolkit");
 
-let initialState = [].concat(JSON.parse(localStorage.getItem("totalprice")));
+//let initialState = [].concat(JSON.parse(localStorage.getItem("totalprice")));
 let cartprice = createSlice({
     name:"cartprice",
-    initialState,
+    initialState:[],
     reducers:{
         addprice(state,action){
            state.push(action.payload)

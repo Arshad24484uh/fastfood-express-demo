@@ -3,12 +3,12 @@ import './loading';
 import '../css/cart.css';
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { createSelector } from '@reduxjs/toolkit';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import Tooltip from '@mui/material/Tooltip';
 import { remove } from '../redux/slice';
 import { removeprice } from '../redux/cartprice';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 
 const CartPage = () => {
@@ -21,8 +21,11 @@ const CartPage = () => {
         pincode: 18
     })
 
-    const user = JSON.parse(localStorage.getItem("user"));
-    console.log("this is user details",user);
+
+
+        const user = JSON.parse(localStorage.getItem("user"));
+    console.log("this is user details",);
+      
     async function submithandle() {
         console.log("this is a address", address);
 
@@ -32,7 +35,7 @@ const CartPage = () => {
             headers: {
                 "content-type": "application/json"
             },
-            body: JSON.stringify({ user, newarr, totalprice,address, })
+            body: JSON.stringify({ user, item, totalprice,address, })
         })
         let result = await res.json();
         console.log(result)
@@ -45,19 +48,13 @@ const CartPage = () => {
     const [color, setcolor] = useState();
     const [sdispay, ssetdispay] = useState();
     const [bdisplay,setbdisplay] = useState();
-    /*const [image,setimage] = useState('hsh');
-    const [title,settitle] = useState('gh');
-    const [size,setsize] = useState('ii');
-    const [amount,setamount] =  useState(44);
-    const [price,setprice] = useState(10);
-    const [quantity,setquantity] = useState(1);*/
     const dispatch = useDispatch();
 
     const item = useSelector((state) => state.cart);
     const total = useSelector((state) => state.cartprice);
     console.log("this is a cartprice", total)
-    const count = item.length;
-    console.log(item);
+    //const count = item.length;
+    console.log("this is item ",item, "this is item lenght",item.length);
 
     function handle(id, totalprice) {
         dispatch(remove(id));
@@ -66,9 +63,6 @@ const CartPage = () => {
 
 
 
-        // const cartdata = JSON.parse(localStorage.getItem("product"));
-        // let nedata =  item.filter((item)=> item?.id !== cartdata.id);
-        //  localStorage.setItem("product",JSON.stringify(nedata))
 
 
     }
@@ -83,7 +77,7 @@ const CartPage = () => {
             setdiv("flex")
         }
     
-    },[])
+    })
 
 
     
@@ -113,29 +107,29 @@ const CartPage = () => {
     //let nedata =  item.filter((item)=> item.id !== cartdata.id);
     // localStorage.setItem("product",JSON.stringify(nedata))
 
-    let newarr = item.map((element, index) => {
+   /* let newarr = item.map((element, index) => {
         if (index === 0) {
             return null;
         }
         return element;
     }).filter(element => element !== null);
-    console.log("this is new array", newarr)
+    console.log("this is new array", newarr)*/
 
 
 
-    let newprice = total.map((element, index) => {
+    /*let newprice = total.map((element, index) => {
         if (index === 0) {
             return null;
         }
         return element;
     }).filter(element => element !== null);
-    console.log("this is new price", newprice)
+    console.log("this is new price", newprice)*/
 
 
 
 
 
-    let totalprice = newprice.reduce((accumulator, currentvalue) => accumulator + currentvalue, 0);
+    let totalprice = total.reduce((accumulator, currentvalue) => accumulator + currentvalue, 0);
     console.log("this is a sum of new price", totalprice)
     /*let prices = 0;
     
@@ -156,17 +150,17 @@ const CartPage = () => {
                     <span id='cart-icon' class="material-symbols-outlined">
                         shopping_cart_checkout
                     </span>
-                    <h3 className='counter'>{newarr.length} Items</h3>
+                    <h3 className='counter'>{item.length} Items</h3>
 
                 </div>
 
                 {
-                    newarr.map((i) => {
+                    item.map((i) => {
                         return (
                             <>
                                 <div style={{display:bdisplay}} className="cart-box">
                                     <div className="image-box">
-                                        <img src={i?.image} alt="cart-image" />
+                                        <Image src={i?.image} alt="cart-image" width={100} height={100}  />
                                     </div>
 
                                     <div className="title-box">

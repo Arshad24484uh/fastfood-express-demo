@@ -4,7 +4,7 @@ import '../../../app/css/orderpage.css';
 import Navbar from "@/components/navbar";
 import Searchbar from "@/components/searchbar";
 import { useEffect, useState } from "react";
-const orderpage = ({ params }) => {
+const Orderpage = ({ params }) => {
     const [orders, setorders] = useState([]);
     let userid = params.userorder;
     console.log(userid);
@@ -75,4 +75,4 @@ const orderpage = ({ params }) => {
         </>
     )
 }
-export default orderpage;
+export default Orderpage;

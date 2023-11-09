@@ -1,22 +1,24 @@
 'use client';
+import { useRouter } from 'next/navigation'
 import gif from '../../../../public/upiimages/Animation - 1698410197310.gif';
 //Animation - 1698410197310.gif'
 import Image from 'next/image';
 import '../../css/ordersuccess.css';
 const OrderSuccess = ({params})=>{
+    const router = useRouter();
     console.log(params);
     const orderId = params.orderid;
     let num = 3;
 
     setTimeout(() => {
-        window.location.href='/'
+        router.push('/')
     }, 10000);
 
-    if(num==3){
+    /*if(num==3){
         localStorage.removeItem("product")
         localStorage.removeItem("totalamount");
         localStorage.removeItem("totalprice")
-    }
+    }*/
     return(
         <>
             <div className="order-box">

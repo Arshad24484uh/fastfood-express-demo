@@ -8,11 +8,20 @@ import upi from '../../../../public/upiimages/icons8-bhim-96.png';
 import card from '../../../../public/upiimages/icons8-debit-card-96.png';
 import Image from 'next/image';
 import { useState } from 'react';
-const confirmpayment = ({params})=>{
+import { useEffect } from 'react';
+const Confirmpayment = ({params})=>{
     const orderId = params.confirm;
-    let totalamount = JSON.parse(localStorage.getItem("totalamount"));
+   // console.log("this is user details",user);
+
+      //let totalamount = JSON.parse(localStorage.getItem("totalamount"));
+    
     const [payment,setpaymentstatus] = useState();
     const [color,setbackgroundcolor] = useState();
+    const [totalamount,setTotalamount] = useState();
+    useEffect(()=>{
+        let totalamounts = JSON.parse(localStorage.getItem("totalamount"));
+        setTotalamount(totalamounts)
+    },[])
     setTimeout(() => {
         if(!payment){
             setbackgroundcolor("lightgrey")
@@ -114,4 +123,4 @@ const confirmpayment = ({params})=>{
         </>
     )
 }
-export default confirmpayment;
+export default Confirmpayment;

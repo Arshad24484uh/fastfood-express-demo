@@ -18,7 +18,7 @@ import { addprice } from "@/app/redux/cartprice";
 
 
 
-const productpage = ({ params }) => {
+const Productpage = ({ params }) => {
 
 
     // this is a our usestate data the send in our cart page
@@ -231,4 +231,4 @@ const productpage = ({ params }) => {
         </>
     )
 }
-export default productpage;
+export default Productpage;

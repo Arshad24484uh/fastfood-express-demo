@@ -10,6 +10,7 @@
     border-top: 0.5px solid black;
 }
 
+
 .bottom-box{
     width: 20%;
     height: 100%;
@@ -23,6 +24,14 @@ p{
     font-weight: 500;
      font-family: 'DM Sans', sans-serif ;
 
+}
+#cart-icon{
+    color: rgb(46, 44, 44);
+    font-size: 13px;
+    font-weight: 500;
+     font-family: 'DM Sans', sans-serif ;
+     text-decoration: none;
+     display: block;
 }
 @media only screen and (max-width: 500px){
     .bottom-bar{

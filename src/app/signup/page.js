@@ -1,12 +1,14 @@
 'use client';
 import { useState } from 'react';
-
+import { useRouter } from 'next/navigation';
 
 import '../css/registerpage.css';
+
 import Link from 'next/link';
 
 import BottomBar from '@/components/bottombar1';
 const Signup = () =>{
+    const router = useRouter();
     const [fullname,setfullname] = useState();
     const [email,setemail] = useState();
     const [mobile,setmobile] = useState();
@@ -27,8 +29,9 @@ const Signup = () =>{
     
     
     if(data.success==true){
-        localStorage.setItem("user",userdetails);
-        history.back();
+       // const user = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem("user")) : null;
+      typeof window !== 'undefined'? localStorage.setItem("user",userdetails):null;
+        window.location.href="/"
 
 
     }else{
@@ -39,7 +42,7 @@ const Signup = () =>{
 
     
     }
-    if(window.localStorage.getItem("data")){
+    if(typeof window !== "undefined"?localStorage.getItem("user"):null){
         alert("you are authorizes User");
     }
 

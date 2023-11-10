@@ -18,11 +18,11 @@ body{
 .cart-box{
     width: 90%;
     height: 65px;
-    border: 1px solid rgba(182, 182, 182, 0.459);
+    /*border: 1px solid rgba(182, 182, 182, 0.459);*/
     margin: 5%;
     display: flex;
-    background-color: rgb(245, 255, 249);
-    background-color: white;
+   /* background-color: rgb(245, 255, 249);
+    background-color: white;*/
 }
 .image-box{
     width: 15%;
@@ -45,7 +45,7 @@ h1{
     font-size: 25px;
     margin-top: 10px;
 }
-#cart-icon{
+#cart-iconn{
     font-size: 40px;
     color: crimson;
 }

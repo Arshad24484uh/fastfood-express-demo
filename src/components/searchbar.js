@@ -4,10 +4,11 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import { useState, useEffect } from 'react';
 
+
 const Searchbar = () => {
 
 
-
+  let deliver = "Mumbai G.P.O 400000";
   const [display, setdisplay] = useState();
   const [color, setcolor] = useState();
   const [borderRadius, setborderRadius] = useState();
@@ -35,20 +36,22 @@ const Searchbar = () => {
   useEffect(() => {
     //let local = JSON.parse(localStorage.getItem("deliverd"));
     //setdeli(local)
+    
 
     if(typeof window !=="undefined"){
+      localStorage.setItem("deliverd",JSON.stringify(deliver))
       let local = JSON.parse(localStorage.getItem("deliverd"));
       setdeli(local)
 
-      if(deli){
+      /*if(deli){
         setdisplay("none")
        }else{
         setdisplay("block")
-       }
+       }*/
    
      }
   
-  },[2])
+  },[])
    /*if(typeof window !=="undefined"){
     let local = JSON.parse(localStorage.getItem("deliverd"));
     setdeli(local)
@@ -56,13 +59,13 @@ const Searchbar = () => {
 
   
 
-  /*setTimeout(() => {
+  setTimeout(() => {
      if(deli){
       setdisplay("none")
      }else{
       setdisplay("block")
      }
-  },500);*/
+  },600);
  
 
 
@@ -82,7 +85,7 @@ const Searchbar = () => {
     <>
       <div className="searchbar" style={{ backgroundColor: color, borderRadius: borderRadius, marginTop: margin }}>
         <div className="deliveryshow">
-          <h2 id='delivery-show-heading'> delivered to {deli?.area} {deli?.pincode} </h2>
+          <h2 id='delivery-show-heading'> delivered to Mumbai G.P.O 400001{deli?.area} {deli?.pincode} </h2>
           <div className='div-box2'>
             <LocationOnOutlinedIcon className='locationdrop' />
             <p onClick={() => { setdisplay("block"); localStorage.removeItem("deliverd") }} className='change-location-paragaraph'>change location</p>

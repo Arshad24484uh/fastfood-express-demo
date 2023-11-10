@@ -18,7 +18,7 @@ const Orderpage = ({ params }) => {
         localStorage.setItem("order",order);
 
     }
-    console.log(orders[0]?.orders[0][0].title)
+    //console.log(orders[0]?.orders[0][0].title)
     
 
     useEffect(() => {

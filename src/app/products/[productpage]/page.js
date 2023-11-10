@@ -19,7 +19,7 @@ import { addprice } from "@/app/redux/cartprice";
 
 
 const Productpage = ({ params }) => {
-
+    const datas = useSelector((state) => state.cart)
 
     // this is a our usestate data the send in our cart page
 
@@ -33,9 +33,7 @@ const Productpage = ({ params }) => {
         cartsize:""
 
     })
-    const datas = useSelector((state) => state.cart)
-    console.log(datas)
-    const item_length = datas.length-1;
+    
     const dispatch = useDispatch();
     const [type, settype] = useState();
     const [item, setitem] = useState({
@@ -56,11 +54,6 @@ const Productpage = ({ params }) => {
 
     useEffect(() => {
         fetchdata();
-
-
-    }, [])
-
-    setTimeout(() => {
         if (item.type == "nonveg") {
             settype(nonveg)
         } else if (item.type == "veg") {
@@ -68,7 +61,18 @@ const Productpage = ({ params }) => {
         } else {
             alert("something went wrong")
         }
-    }, 2000);
+
+    }, [])
+
+    /*setTimeout(() => {
+        if (item.type == "nonveg") {
+            settype(nonveg)
+        } else if (item.type == "veg") {
+            settype(veg);
+        } else {
+            alert("something went wrong")
+        }
+    }, 2000);*/
 
 
     const [size,setsize] = useState();
@@ -220,9 +224,9 @@ const Productpage = ({ params }) => {
             <div className="sidebar">
                 <Searchbar />
                 <Tooltip title='Go To Cart'>
-                    <ShoppingCartOutlinedIcon  id="cart-icon" onClick={()=>{window.location.href="/cart"}} />
+                    <ShoppingCartOutlinedIcon  id="cart-icons" onClick={()=>{window.location.href="/cart"}} />
                 </Tooltip>
-                <button className="cart-value">{item_length}</button>
+                <button className="cart-value">{ datas.length}</button>
             </div>
 
             

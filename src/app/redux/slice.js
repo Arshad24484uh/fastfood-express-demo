@@ -10,7 +10,7 @@ const cartslice = createSlice({
 
             state.push(action.payload);
            // let a = JSON.stringify(current(state))
-           // localStorage.setItem("product", a);
+          // localStorage.setItem("product", a);
 
 
         },

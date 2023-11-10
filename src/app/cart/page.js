@@ -9,9 +9,19 @@ import { remove } from '../redux/slice';
 import { removeprice } from '../redux/cartprice';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 
 const CartPage = () => {
+    const router = useRouter();
+    const [item,setitem] = useState([]);
+    const items = useSelector((state) => state.cart);
+    useEffect(()=>{
+    setitem(items)
+    },[])
+    
+    console.warn("this is items",item)
+    const total = useSelector((state) => state.cartprice);
     const [address, setaddress] = useState({
         houseno: "01",
         streat: "gk",
@@ -22,8 +32,7 @@ const CartPage = () => {
     })
 
 
-
-        const user = JSON.parse(localStorage.getItem("user"));
+    const user = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem("user")) : null;
     console.log("this is user details",);
       
     async function submithandle() {
@@ -35,7 +44,7 @@ const CartPage = () => {
             headers: {
                 "content-type": "application/json"
             },
-            body: JSON.stringify({ user, item, totalprice,address, })
+            body: JSON.stringify({ user, items, totalprice,address, })
         })
         let result = await res.json();
         console.log(result)
@@ -43,6 +52,7 @@ const CartPage = () => {
         localStorage.setItem("totalamount",totalamount);
         console.log("this is totalamount",totalamount);
         window.location.href=`/confirmorder/${result.response.orderId}`
+        
     }
     const [display, setdisplay] = useState();
     const [color, setcolor] = useState();
@@ -50,10 +60,8 @@ const CartPage = () => {
     const [bdisplay,setbdisplay] = useState();
     const dispatch = useDispatch();
 
-    const item = useSelector((state) => state.cart);
-    const total = useSelector((state) => state.cartprice);
+   
     console.log("this is a cartprice", total)
-    //const count = item.length;
     console.log("this is item ",item, "this is item lenght",item.length);
 
     function handle(id, totalprice) {
@@ -66,19 +74,23 @@ const CartPage = () => {
 
 
     }
-    const [div,setdiv]= useState();
 
-    useEffect(()=>{
-        if (totalprice == 0) {
-            alert("your cart is empty")
-            setdiv("none")
-        
-        }else{
-            setdiv("flex")
-        }
     
-    })
-
+        // ... (previous code)
+    
+        const [div, setdiv] = useState();
+        let totalprice = total.reduce((accumulator, currentvalue) => accumulator + currentvalue, 0);
+    console.log("this is a sum of new price", totalprice)
+    
+        useEffect(() => {
+            if (totalprice === 0) {
+                alert("your cart is empty")
+                setdiv("none")
+            } else {
+                setdiv("flex")
+            }
+        }, [totalprice]);
+    
 
     
 
@@ -86,7 +98,7 @@ const CartPage = () => {
     const orderhandle = async () => {
         console.log("this is a Address", address)
         if (!user?._id) {
-            window.location.href = "/signup"
+            window.location.href="/signup"
         } else {
             alert("you are loggedIn")
             setdisplay('inline-block');
@@ -103,41 +115,6 @@ const CartPage = () => {
     }
 
 
-    // const cartdata = JSON.parse(localStorage.getItem("product"));
-    //let nedata =  item.filter((item)=> item.id !== cartdata.id);
-    // localStorage.setItem("product",JSON.stringify(nedata))
-
-   /* let newarr = item.map((element, index) => {
-        if (index === 0) {
-            return null;
-        }
-        return element;
-    }).filter(element => element !== null);
-    console.log("this is new array", newarr)*/
-
-
-
-    /*let newprice = total.map((element, index) => {
-        if (index === 0) {
-            return null;
-        }
-        return element;
-    }).filter(element => element !== null);
-    console.log("this is new price", newprice)*/
-
-
-
-
-
-    let totalprice = total.reduce((accumulator, currentvalue) => accumulator + currentvalue, 0);
-    console.log("this is a sum of new price", totalprice)
-    /*let prices = 0;
-    
-    const selecttotalprice = createSelector([item],(items)=> items.reduce((total,item)=>total +item.price,0));
-    const  cartitem = useSelector(selectcartitem);
-    const totals  = useSelector(selecttotalprice)
-    */
-
 
     
 
@@ -147,7 +124,7 @@ const CartPage = () => {
             <div style={{display:bdisplay}} className="cart-wrapper">
                 <div className="cart-nav">
                     <h1 className='h1'>Cart </h1>
-                    <span id='cart-icon' class="material-symbols-outlined">
+                    <span id='cart-iconn' class="material-symbols-outlined">
                         shopping_cart_checkout
                     </span>
                     <h3 className='counter'>{item.length} Items</h3>
@@ -155,7 +132,7 @@ const CartPage = () => {
                 </div>
 
                 {
-                    item.map((i) => {
+                    items.map((i) => {
                         return (
                             <>
                                 <div style={{display:bdisplay}} className="cart-box">

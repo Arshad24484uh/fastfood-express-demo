@@ -14,7 +14,7 @@ const Signup = () =>{
     const [mobile,setmobile] = useState();
     const [password,setpassword] = useState();
    async function registerbtn(){
-        let res = await fetch("https//:www.gadgethindi.com/register",{
+        let res = await fetch("https://www.gadgethindi.com/register",{
             method:"post",
             headers:{
                 "content-type":"application/json"

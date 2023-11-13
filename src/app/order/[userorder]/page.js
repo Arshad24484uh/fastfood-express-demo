@@ -10,7 +10,7 @@ const Orderpage = ({ params }) => {
     console.log(userid);
 
     const fetchorder = async () => {
-        const res = await fetch(`http://13.126.118.23:8000/getorders/${userid}`)
+        const res = await fetch(`https://www.gadgethindi.com/getorders/${userid}`)
         const data = await res.json();
         setorders(data);
         console.log(data)

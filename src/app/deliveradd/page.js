@@ -8,7 +8,7 @@ const Deliveryadd = () => {
     const [state,setstate] = useState();
 
     const handle = async() =>{
-       let res = await fetch("http://13.126.118.23:8000/addDelivery",{
+       let res = await fetch("https://www.gadgethindi.com/addDelivery",{
         method:"POST",
         headers:{
             "content-type":"application/json"

@@ -31,7 +31,7 @@ const Confirmpayment = ({params})=>{
     }, 1000);
 
     const orderhandle = async ()=>{
-     const res = await fetch(`http://13.126.118.23:8000/updatepayment/${orderId}`,{
+     const res = await fetch(`https://www.gadgethindi.com/updatepayment/${orderId}`,{
         method:"put",
         headers:{
             "content-type":"application/json"

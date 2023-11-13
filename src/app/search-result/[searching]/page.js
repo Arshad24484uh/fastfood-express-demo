@@ -11,7 +11,7 @@ const Searching = ({params})=>{
     const [product,setproduct] = useState([]);
 
     const fetchdata = async()=>{
-        let res = await fetch(`http://13.126.118.23:8000/findcategory/${query}`);
+        let res = await fetch(`https://www.gadgethindi.com/findcategory/${query}`);
         let data = await res.json();
         setproduct(data)
     }

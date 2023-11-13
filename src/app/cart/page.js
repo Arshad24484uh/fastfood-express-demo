@@ -39,7 +39,7 @@ const CartPage = () => {
         console.log("this is a address", address);
 
 
-        let res = await fetch("http://13.126.118.23:8000/orders", {
+        let res = await fetch("https://www.gadgethindi.com/orders", {
             method: "post",
             headers: {
                 "content-type": "application/json"

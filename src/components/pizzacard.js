@@ -9,7 +9,7 @@ const Pizzacard = () =>{
     const [products,setproduct] = useState([]);
 
     const datafetched = async ()=>{
-        const res = await fetch("http://13.126.118.23:8000/find");
+        const res = await fetch("https://www.gadgethindi.com/find");
         const data = await res.json();
         console.log(data);
         setproduct(data);

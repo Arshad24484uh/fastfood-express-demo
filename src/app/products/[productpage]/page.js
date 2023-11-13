@@ -46,7 +46,7 @@ const Productpage = ({ params }) => {
     });
     const _id = params.productpage;
     const fetchdata = async () => {
-        const res = await fetch(`http://13.126.118.23:8000/find/${_id}`);
+        const res = await fetch(`https://www.gadgethindi.com/find/${_id}`);
         const data = await res.json();
         console.log(data);
         setitem(data)

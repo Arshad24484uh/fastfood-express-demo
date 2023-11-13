@@ -15,7 +15,7 @@ const Login = () => {
     const [password, setpassword] = useState();
 
     const loginhandle = async () => {
-        let res = await fetch("http://13.126.118.23:8000/login", {
+        let res = await fetch("https://www.gadgethindi.com/login", {
             method: 'post',
             headers: {
                 "content-type": "application/json"

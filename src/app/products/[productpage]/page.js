@@ -54,17 +54,17 @@ const Productpage = ({ params }) => {
 
     useEffect(() => {
         fetchdata();
-        if (item.type == "nonveg") {
+       /* if (item.type == "nonveg") {
             settype(nonveg)
         } else if (item.type == "veg") {
             settype(veg);
         } else {
             alert("something went wrong")
-        }
+        }*/
 
     }, [])
 
-    /*setTimeout(() => {
+    setTimeout(() => {
         if (item.type == "nonveg") {
             settype(nonveg)
         } else if (item.type == "veg") {
@@ -72,7 +72,7 @@ const Productpage = ({ params }) => {
         } else {
             alert("something went wrong")
         }
-    }, 2000);*/
+    }, 1000);
 
 
     const [size,setsize] = useState();
